@@ -8,7 +8,7 @@ const getModels = (request) => {
   const noRequestModels = !request.models;
   if (noGetDb && noRequestModels) {
     return notImplemented('`request.getDb` or `request.models` are not defined.'
-                   + 'Be sure to load hapi-sequelize before hapi-sequelize-crud.');
+                   + 'Be sure to load hapi-sequelize before hapi-sequelize-restfull.');
   }
 
   const { models } = noGetDb ? request : request.getDb();

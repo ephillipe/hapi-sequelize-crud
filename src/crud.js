@@ -93,7 +93,7 @@ export default (server, model, { prefix, defaultConfig: config, models: permissi
     });
   // if permissions are set, but we can't parse them, throw an error
   } else if (!Array.isArray(permissions)) {
-    throw new Error('hapi-sequelize-crud: `models` property must be an array');
+    throw new Error('hapi-sequelize-restfull: `models` property must be an array');
   // if permissions are set, but the only thing we've got is a model name, there
   // are no permissions to be set, so just create all methods and move on
   } else if (permissions.includes(modelName)) {

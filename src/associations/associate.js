@@ -8,6 +8,7 @@ export default (server, a, b, names, options) => {
   prefix = options.prefix;
   defaultConfig = options.defaultConfig;
 
+
   server.route({
     method: 'GET',
     path: `${prefix}/associate/${names.a.singular}/{aid}/${names.b.singular}/{bid}`,

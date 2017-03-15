@@ -4,4 +4,4 @@ set -euo pipefail
 IFS=$'\n\t'
 
 export SRC_DIR="./src"
-export OUT_DIR="./build"
+export OUT_DIR="./dist"

@@ -29,6 +29,7 @@ export default (target, key, descriptor) => {
           error.reformat();
         }
 
+
         // hint might provide useful information about how to fix the problem
         if (hint) {
           error.message += ` Hint: ${hint}`;

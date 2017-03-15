@@ -1,4 +1,4 @@
-hapi-sequelize-crud [![CircleCI](https://circleci.com/gh/mdibaiee/hapi-sequelize-crud.svg?style=svg)](https://circleci.com/gh/mdibaiee/hapi-sequelize-crud)
+hapi-sequelize-restfull [![CircleCI](https://circleci.com/gh/mdibaiee/hapi-sequelize-restfull.svg?style=svg)](https://circleci.com/gh/mdibaiee/hapi-sequelize-restfull)
 ===================
 
 Automatically generate a RESTful API for your models and associations
@@ -6,12 +6,12 @@ Automatically generate a RESTful API for your models and associations
 This plugin depends on [`hapi-sequelize`](https://github.com/danecando/hapi-sequelize).
 
 ```
-npm install -S hapi-sequelize-crud
+npm install -S hapi-sequelize-restfull
 ```
 
 ## Configure
 
-Please note that you should register `hapi-sequelize-crud` after defining your
+Please note that you should register `hapi-sequelize-restfull` after defining your
 associations.
 
 ```javascript
@@ -26,9 +26,9 @@ let db = server.plugins['hapi-sequelize'].db;
 let models = db.sequelize.models;
 associations(models); // pretend this function defines our associations
 
-// Now, register hapi-sequelize-crud
+// Now, register hapi-sequelize-restfull
 await register({
-  register: require('hapi-sequelize-crud'),
+  register: require('hapi-sequelize-restfull'),
   options: {
     prefix: '/v1',
     name: 'db', // the same name you used for configuring `hapi-sequelize` (options.name)
@@ -53,7 +53,7 @@ await register({
       {model: 'bat', methods: ['list'], config: { ... }},
       {model: 'bat', methods: ['create']}
       {model: 'fly', config: {
-        // interact with the request before hapi-sequelize-crud does
+        // interact with the request before hapi-sequelize-restfull does
         , ext: {
           onPreHandler: (request, reply) => {
             if (request.auth.hasAccessToFly) reply.continue()
@@ -193,11 +193,11 @@ Player.findAll({order: [[{model: Team}, 'name']], include: [Team]})
 You can use Hapi's [`ext` option](http://hapijs.com/api#route-options) to interact with the request both before and after this module does. This is useful if you want to enforce authorization, or modify the request before or after this module does. Hapi [has a full list of hooks](http://hapijs.com/api#request-lifecycle) you can use.
 
 ## Modify the response format
-By default, `hapi-sequelize-crud` routes will respond with the full model. You can modify this using the built-in [hapi settings](http://hapijs.com/tutorials/validation#output).
+By default, `hapi-sequelize-restfull` routes will respond with the full model. You can modify this using the built-in [hapi settings](http://hapijs.com/tutorials/validation#output).
 
 ```js
 await register({
-  register: require('hapi-sequelize-crud'),
+  register: require('hapi-sequelize-restfull'),
   options: {
     …
     {model: 'fly', config: {

@@ -1,0 +1,92 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/src/associations/one-to-many.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/crud.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/error.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/associations/associate.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/associations/one-to-one.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/associations/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/get-config-for-method.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/utils.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/get-config-for-method.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/utils.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/error.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-where.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-scope.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/associations/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-create.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-route-creation.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/associations/one-to-many.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/associations/one-to-one.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-list-limit-and-offset.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/associations/associate.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-include.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-list-order.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-update.integration.test.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/crud-destroy.integration.test.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/src/get-config-for-method.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/crud-where.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/crud-create.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/crud-route-creation.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-include.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/crud-update.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-destroy.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/utils.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/get-config-for-method.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-scope.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-list-limit-and-offset.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-list-order.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-scope.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-list-limit-and-offset.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/crud-update.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-include.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-destroy.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/utils.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/get-config-for-method.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/crud-list-order.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/associations/one-to-many.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/crud.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/error.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/associations/associate.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/associations/one-to-one.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/associations/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/get-config-for-method.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/utils.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/get-config-for-method.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/utils.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/error.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-where.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-scope.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/associations/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-create.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-route-creation.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/associations/one-to-many.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/associations/one-to-one.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-list-limit-and-offset.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/associations/associate.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-include.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-list-order.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-update.integration.test.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/crud-destroy.integration.test.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
