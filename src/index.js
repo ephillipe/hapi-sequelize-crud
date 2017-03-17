@@ -2,9 +2,11 @@ if (!global._babelPolyfill) {
   require('babel-polyfill');
 }
 
+import JoiSequelize from 'joi-sequelize';
 import crud, { associations } from './crud';
 import url from 'url';
 import qs from 'qs';
+import _ from 'lodash';
 
 const register = (server, options = {}, next) => {
   options.prefix = options.prefix || '/';
@@ -34,6 +36,11 @@ const register = (server, options = {}, next) => {
     model._singular = singular.toLowerCase();
     model._Plural = plural;
     model._Singular = singular;
+
+    const modelPath = _.findKey(db.sequelize.importCache, (ic) => {
+      return ic.name === modelName;
+    });
+    model._js = new JoiSequelize(require(modelPath));
 
     // Join tables
     if (model.options.name.singular !== model.name) continue;
