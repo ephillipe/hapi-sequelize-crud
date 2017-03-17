@@ -35,41 +35,12 @@ export const sequelizeOperators = {
   $col: joi.any(),
 };
 
-export const whereMethods = [
-  'list',
-  'get',
-  'scope',
-  'destroy',
-  'destoryScope',
-  'destroyAll',
-];
-
-export const includeMethods = [
-  'list',
-  'get',
-  'scope',
-  'destoryScope',
-];
-
-export const payloadMethods = [
-  'create',
-  'update',
-];
-
-export const scopeParamsMethods = [
-  'destroyScope',
-  'scope',
-];
-
-export const idParamsMethods = [
-  'get',
-  'update',
-];
-
-export const restrictMethods = [
-  'list',
-  'scope',
-];
+export const whereMethods = ['list','scope','destoryScope','destroyAll'];
+export const includeMethods = ['list','get','scope','destoryScope'];
+export const payloadMethods = ['create','update'];
+export const scopeParamsMethods = ['destroyScope','scope'];
+export const idParamsMethods = ['get', 'update', 'destroy'];
+export const restrictMethods = ['list','scope'];
 
 export default ({
   method, attributeValidation, associationValidation, scopes = [], config = {},
@@ -87,7 +58,6 @@ export default ({
     const query = concatToJoiObject(joi.object()
       .keys({
         ...attributeValidation,
-        ...sequelizeOperators,
       }),
       get(methodConfig, 'validate.query')
     );

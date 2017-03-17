@@ -177,7 +177,7 @@ export const list = ({ server, model, prefix = '/', config }) => {
 export const get = ({ server, model, prefix = '/', config }) => {
   server.route({
     method: 'GET',
-    path: path.join(prefix, model._singular, '{id?}'),
+    path: path.join(prefix, model._plural, '{id}'),
 
     @error
     async handler(request, reply) {
@@ -227,7 +227,7 @@ export const scope = ({ server, model, prefix = '/', config }) => {
 export const create = ({ server, model, prefix = '/', config }) => {
   server.route({
     method: 'POST',
-    path: path.join(prefix, model._singular),
+    path: path.join(prefix, model._plural),
 
     @error
     async handler(request, reply) {
@@ -243,7 +243,7 @@ export const create = ({ server, model, prefix = '/', config }) => {
 export const destroy = ({ server, model, prefix = '/', config }) => {
   server.route({
     method: 'DELETE',
-    path: path.join(prefix, model._singular, '{id?}'),
+    path: path.join(prefix, model._plural, '{id}'),
 
     @error
     async handler(request, reply) {
@@ -327,7 +327,7 @@ export const destroyScope = ({ server, model, prefix = '/', config }) => {
 export const update = ({ server, model, prefix = '/', config }) => {
   server.route({
     method: 'PUT',
-    path: path.join(prefix, model._singular, '{id}'),
+    path: path.join(prefix, model._plural, '{id}'),
 
     @error
     async handler(request, reply) {
@@ -346,5 +346,5 @@ export const update = ({ server, model, prefix = '/', config }) => {
 };
 
 const methods = {
-  list, get, scope, create, destroy, destroyAll, destroyScope, update,
+  list, get, create, destroy, destroyAll, update,
 };
